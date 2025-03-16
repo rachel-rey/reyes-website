@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     //<div className={`grid grid-rows-[20px_1fr_20px] items-center min-h-screen p-8 pb-20 gap-16 `}>
-    <div className="pb-20 p-8">
+    <div >
       <div className=" bg-[url('/Photos/88C71B99-4026-4BD4-8BB5-2838D395D929.jpg')] bg-fixed bg-cover bg-center min-h-screen flex flex-col items-center justify-center">
       <div className="bg-transparent/60">
         {/* Welcome Section */}
         <div className="text-center p-10">
           <h1 className="text-4xl font-bold">Welcome to my personal website!</h1>
           <p className="mt-2 text-2xl shadow ">
-            Hi! My name is Rachel Reyes from Denver, Colorado and currently a senior in college. Im looking for bigger opportunitie to grow my software engineering skills after I graduate this year.
+            Hi! My name is Rachel Reyes from Denver, Colorado and currently a senior in college. Im looking for bigger opportunities to grow my software engineering skills after I graduate this year.
             This is little about the outdoors, good reads, great food, fitness, and
             software engineering.
           </p>
@@ -27,26 +27,12 @@ export default function Home() {
           <div className="my-4 w-full flex justify-center">
             <Image
               src="/Photos/me.JPG"
-              width="320"
-              height="420"
+              width={320}
+              height={420}
               alt="Picture of me"
               className="rounded-lg shadow-lg"
             />
           </div>
-
-          {/* Video */}
-          <video
-            width="640"
-            height="360"
-            controls
-            className="my-4 rounded-lg shadow-lg"
-          >
-            <source
-              src="/Photos/export_1696555614633(1).mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
 
           {/* Image 2 */}
           <div className="my-4">
@@ -58,17 +44,6 @@ export default function Home() {
               className="rounded-lg shadow-lg"
             />
           </div>
-
-          {/* Image 3 */}
-          <div className="my-4">
-            <Image
-              src="/Photos/88C71B99-4026-4BD4-8BB5-2838D395D929.jpg"
-              width={350}
-              height={420}
-              alt="Picture of a bridge with trees around it in Washington"
-              className="rounded-lg shadow-lg"
-            />
-        </div>
         </div>
       </div>
       </div>
@@ -85,7 +60,7 @@ export default function Home() {
                     Instagram
                   </Link>
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-white"
+                    className="w-6 h-6 text-white dark:text-white"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -108,8 +83,8 @@ export default function Home() {
                   >
                     LinkedIn
                   </Link>
-                  <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+                  <svg className="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fillRule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clipRule="evenodd"/>
                     <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
                   </svg>
               </div>

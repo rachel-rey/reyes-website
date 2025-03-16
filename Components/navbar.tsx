@@ -1,9 +1,14 @@
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <nav className="bg-navbar text-white shadow-md sm:p-20">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <nav className="bg-navbar text-white shadow-md p-8">
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl font-bold">
           <Link href="/" className="hover:text-yellow-900">
@@ -11,48 +16,42 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Links */}
+        {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/" className="hover:text-yellow-900">
-            Home
-          </Link>
-          <Link href="/aboutMe" className="hover:text-yellow-900">
-            About Me
-          </Link>
-          <Link href="/project" className="hover:text-yellow-900">
-            Projects
-          </Link>
-          <Link href="/health" className="hover:text-yellow-900">
-            Health
-          </Link>
-          <Link href="/contact" className="hover:text-yellow-900">
-            Contact
-          </Link>
+          <Link href="/" className="hover:text-yellow-900">Home</Link>
+          <Link href="/aboutMe" className="hover:text-yellow-900">About Me</Link>
+          <Link href="/project" className="hover:text-yellow-900">Projects</Link>
+          <Link href="/health" className="hover:text-yellow-900">Health</Link>
+          <Link href="/contact" className="hover:text-yellow-900">Contact</Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button
-            type="button"
-            className="text-white focus:outline-none focus:ring-2 focus:ring-yellow-900"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
+        <button
+          onClick={toggleMenu}
+          className="md:hidden hover:text-yellow-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-900"
+        >
+          {isOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
-          </button>
-        </div>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          )}
+        </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-navbar bg-opacity-95 flex flex-col items-center justify-center space-y-6 text-2xl z-50">
+          <Link href="/" className="hover:text-yellow-900" onClick={toggleMenu}>Home</Link>
+          <Link href="/aboutMe" className="hover:text-yellow-900" onClick={toggleMenu}>About Me</Link>
+          <Link href="/project" className="hover:text-yellow-900" onClick={toggleMenu}>Projects</Link>
+          <Link href="/health" className="hover:text-yellow-900" onClick={toggleMenu}>Health</Link>
+          <Link href="/contact" className="hover:text-yellow-900" onClick={toggleMenu}>Contact</Link>
+        </div>
+      )}
     </nav>
   );
 }

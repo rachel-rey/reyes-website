@@ -1,7 +1,7 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
- // output: "export",  Enables `next export`
+  productionBrowserSourceMaps: false,
   images: {
     unoptimized: true, // Needed if using Next.js images in static export
   },
