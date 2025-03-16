@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --seconddary: #824545;
+  --secondary: #824545;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +19,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: ui-serif, Garamond, Georgia, Cambria serif;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 @layer base{
