@@ -11,7 +11,7 @@ export default function Projects() {
       </div>
 
       {/* Internship Experience */}
-      <div className="px-16 py-4">
+      <div className="py-4">
         <h2 className="text-2xl font-semibold text-center mb-4">Internship Experience</h2>
         <div className="">
           <ul className="space-y-8">
