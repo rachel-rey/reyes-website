@@ -1,7 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
+import {useState} from "react";
 
+
+const meImages = [
+  "/Photos/meinSan.png",
+  "/Photos/meinBlizz.png",
+  "/Photos/megrad.png",
+  "Photos/meinrock.JPG"
+]
 export default function Home() {
+  const [currentImage, setCurrentImage] = useState(meImages[0]);
+  const handleMouseEnter = (index:number) => {
+    setCurrentImage(meImages[index]);
+  };
+
   return (
     <div >
       <div className=" bg-treebg bg-fixed bg-cover bg-center min-h-screen flex flex-col items-center justify-center">
@@ -19,31 +32,31 @@ export default function Home() {
        
 
         {/* Personal Images and Videos */}
-        <div className="text-center flex flex-col justify-center items-center mt-4 n">
+        <div className="text-center flex flex-col justify-center items-center mt-4">
           <h2 className="text-2xl font-semibold ">This is me!</h2>
 
           {/* Image 1 */}
-          <div className="my-4 w-full flex justify-center">
+          <div className="relative w-full max-w-[800px] mx-auto">
             <Image
-              src="/Photos/me.JPG"
-              width={320}
-              height={420}
+              src={currentImage}
+              width={800}
+              height={500}
               alt="Picture of me"
-              className="rounded-lg shadow-lg"
+              className=" w-full h-auto object-cover rounded-lg shadow-lg"
             />
-          </div>
 
-          {/* Image 2 */}
-          <div className="my-4">
-            <Image
-              src="/Photos/rockymountainpic.JPG"
-              width={350}
-              height={420}
-              alt="Picture of the Rocky Mountains through a car window"
-              className="rounded-lg shadow-lg"
-            />
+            <div className="absolute inset-0 grid grid-cols-4 h-full">
+              {meImages.map((_, index) => (
+                <div key={index}
+                className="hover-area w-full h-full"
+                onMouseEnter={() => handleMouseEnter(index)}>
+                </div>
+                ))}
+
+            </div>
           </div>
         </div>
+
       </div>
       </div>
 
