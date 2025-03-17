@@ -3,10 +3,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    //<div className={`grid grid-rows-[20px_1fr_20px] items-center min-h-screen p-8 pb-20 gap-16 `}>
     <div >
-      <div className=" bg-[url('/Photos/88C71B99-4026-4BD4-8BB5-2838D395D929.jpg')] bg-fixed bg-cover bg-center min-h-screen flex flex-col items-center justify-center">
-      <div className="bg-transparent/60">
+      <div className=" bg-treebg bg-fixed bg-cover bg-center min-h-screen flex flex-col items-center justify-center">
+      <div className="bg-transparent/60 bg-fixed flex-col items-center min-h-screen bg-center flex justify-center">
         {/* Welcome Section */}
         <div className="text-center p-10">
           <h1 className="text-4xl font-bold">Welcome to my personal website!</h1>
@@ -46,6 +45,18 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+
+      <div className="bg-forestbg bg-fixed bg-cover min-h-screen bg-no-repeat flex-col bg-center justify-center">
+        <div className="bg-transparent/60 bg-fixed min-h-screen bg-no-repeat flex-col bg-center justify-center">
+          <div className="p-10 text-center">
+            <h2 className="text-4xl font-bold">Learn About Me!</h2>
+            <p className="mt-2 text-2xl shadow">
+              I love seeing new places, eating good food, and seeing great views.
+              I also have internship experiences at Fortune 100 companies including Lockheed Martin and Blizzard Entertainment(bought by Microsoft)!
+            </p>
+          </div>
+        </div>
       </div>
       <footer className="py-10 ">
       {/* Social Media Links */}

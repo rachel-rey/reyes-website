@@ -12,7 +12,9 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'treebg': "/Photos/88C71B99-4026-4BD4-8BB5-2838D395D929.jpg"
+        'treebg': 'url("/Photos/88C71B99-4026-4BD4-8BB5-2838D395D929.jpg")',
+        'forestbg': 'url("/Photos/rockyforest.png")',
+        'gettybg': 'url("/Photos/getty.png")'
       },
       colors: {
         background: "var(--background)",

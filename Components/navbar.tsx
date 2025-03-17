@@ -21,7 +21,6 @@ export default function Navbar() {
           <Link href="/" className="hover:text-yellow-900">Home</Link>
           <Link href="/aboutMe" className="hover:text-yellow-900">About Me</Link>
           <Link href="/project" className="hover:text-yellow-900">Projects</Link>
-          <Link href="/health" className="hover:text-yellow-900">Health</Link>
           <Link href="/contact" className="hover:text-yellow-900">Contact</Link>
         </div>
 
@@ -62,7 +61,6 @@ export default function Navbar() {
           <Link href="/" className="hover:text-yellow-900" onClick={toggleMenu}>Home</Link>
           <Link href="/aboutMe" className="hover:text-yellow-900" onClick={toggleMenu}>About Me</Link>
           <Link href="/project" className="hover:text-yellow-900" onClick={toggleMenu}>Projects</Link>
-          <Link href="/health" className="hover:text-yellow-900" onClick={toggleMenu}>Health</Link>
           <Link href="/contact" className="hover:text-yellow-900" onClick={toggleMenu}>Contact</Link>
         </div>
       )}
