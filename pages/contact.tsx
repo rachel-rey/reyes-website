@@ -83,7 +83,7 @@ export default function Contact() {
             Instagram
           </Link>
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
+            className="w-6 h-6 text-white dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -107,7 +107,7 @@ export default function Contact() {
             LinkedIn
           </Link>
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
+            className="w-6 h-6 text-white dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
