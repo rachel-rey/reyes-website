@@ -1,6 +1,14 @@
+"use client";
 import Link from "next/link";
+import { ReCAPTCHA } from "react-google-recaptcha";
+import { useState, useEffect } from "react";
 
 export default function Contact() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   return (
     <div className="bg-papayawhip min-h-screen text-white-800 p-6">
       {/* Contact Form */}
@@ -30,7 +38,7 @@ export default function Contact() {
               Email:
             </label>
             <input
-              type="text"
+              type="email"
               name="email"
               id="email"
               className="w-full border border-gray-300 rounded p-2"
@@ -51,6 +59,7 @@ export default function Contact() {
             ></textarea>
           </div>
 
+          {loaded && <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!} />}
           <div className="p-8">
             <button
               type="submit"
