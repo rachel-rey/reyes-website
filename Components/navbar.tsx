@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-
+  console.log("its loading")
   return (
     <nav className="text-white shadow-md p-8">
       <div className="container mx-auto flex justify-between items-center">

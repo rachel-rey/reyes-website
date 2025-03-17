@@ -4,7 +4,7 @@ import flowbitePlugin from "flowbite/plugin";
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./Components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/flowbite-react/**/*.js", // Include Flowbite React components
     "./node_modules/flowbite/**/*.js", // Include Flowbite base components
