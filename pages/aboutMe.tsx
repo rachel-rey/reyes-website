@@ -16,7 +16,7 @@ export default function AboutMe() {
       </div>
 
       {/* Hobbies Section */}
-      <div className=" bg-[url('/Photos/tncwashington.jpg')] bg-cover bg-fixed bg-center mb-20"> {/* Increased spacing here */}
+      <div className=" bg-[url('/Photos/rockymountainpic.jpg')] bg-cover bg-fixed bg-center mb-20"> {/* Increased spacing here */}
       <div className="bg-transparent/60 p-8 pb-16">
 
         {/* Outdoors Hobby */}

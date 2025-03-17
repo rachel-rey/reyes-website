@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import {useState} from "react";
+import {ReactTyped} from "react-typed";
 
 
 const meImages = [
@@ -21,7 +22,7 @@ export default function Home() {
       <div className="bg-transparent/60 bg-fixed flex-col items-center min-h-screen bg-center flex justify-center">
         {/* Welcome Section */}
         <div className="text-center p-10">
-          <h1 className="text-4xl font-bold">Welcome to my personal website!</h1>
+          <h1 className="mb-10 text-4xl font-bold">Welcome to my personal website!</h1>
           <p className="mt-2 text-2xl shadow ">
             Hi! My name is Rachel Reyes from Denver, Colorado and currently a senior in college. Im looking for bigger opportunities to grow my software engineering skills after I graduate this year.
             This is little about the outdoors, good reads, great food, fitness, and
@@ -36,7 +37,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold ">This is me!</h2>
 
           {/* Image 1 */}
-          <div className="relative w-full max-w-[800px] mx-auto">
+          <div className="relative w-full max-w-[800px] mx-auto mb-4">
             <Image
               src={currentImage}
               width={800}
@@ -60,17 +61,36 @@ export default function Home() {
       </div>
       </div>
 
-      <div className="bg-forestbg bg-fixed bg-cover min-h-screen bg-no-repeat flex-col bg-center justify-center">
-        <div className="bg-transparent/60 bg-fixed min-h-screen bg-no-repeat flex-col bg-center justify-center">
-          <div className="p-10 text-center">
-            <h2 className="text-4xl font-bold">Learn About Me!</h2>
-            <p className="mt-2 text-2xl shadow">
-              I love seeing new places, eating good food, and seeing great views.
-              I also have internship experiences at Fortune 100 companies including Lockheed Martin and Blizzard Entertainment(bought by Microsoft)!
-            </p>
+      <div className="bg-forestbg bg-fixed bg-cover min-h-screen bg-no-repeat">
+        <div className="bg-transparent/60 bg-fixed min-h-screen bg-no-repeat flex items-center justify-center">
+          <div className="text-center p-10">
+            <h2 className="text-3xl text-white">Who I Am</h2>
+            <h1 className="mt-6 mb-5 text-white font-bold text-5xl">
+              <ReactTyped
+                strings={[
+                  "I'm a student",
+                  "I'm a weightlifter",
+                  "I'm an outdoors enthusiast",
+                  "I'm a foodie",
+                  "I'm a Software Engineer (aspiring)"
+                ]}
+                typeSpeed={100}
+                backSpeed={200}
+                loop
+              />
+            </h1>
+            <button
+              type="button"
+              className="mt-6 text-2xl bg-green-800 text-white px-8 py-4 rounded hover:text-yellow-900 focus:ring-1 focus:ring-white"
+            >
+              <Link href="/aboutMe">Learn More</Link>
+            </button>
           </div>
         </div>
       </div>
+
+
+
       <footer className="py-10 ">
       {/* Social Media Links */}
             <div className="text-center">
