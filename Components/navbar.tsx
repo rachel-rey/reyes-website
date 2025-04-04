@@ -58,10 +58,10 @@ export default function Navbar() {
             </svg>
           )}
         </button>
-          <Link href="/" className="hover:text-yellow-900" onClick={toggleMenu}>Home</Link>
-          <Link href="/aboutMe" className="hover:text-yellow-900" onClick={toggleMenu}>About Me</Link>
-          <Link href="/project" className="hover:text-yellow-900" onClick={toggleMenu}>Projects</Link>
-          <Link href="/contact" className="hover:text-yellow-900" onClick={toggleMenu}>Contact</Link>
+          <Link href="/" className="text-white hover:text-yellow-900" onClick={toggleMenu}>Home</Link>
+          <Link href="/aboutMe" className="text-white hover:text-yellow-900" onClick={toggleMenu}>About Me</Link>
+          <Link href="/project" className="text-white hover:text-yellow-900" onClick={toggleMenu}>Projects</Link>
+          <Link href="/contact" className="text-white hover:text-yellow-900" onClick={toggleMenu}>Contact</Link>
         </div>
       )}
     </nav>
