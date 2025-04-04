@@ -22,8 +22,8 @@ export default function Home() {
       <div className="bg-transparent/60 bg-fixed flex-col items-center min-h-screen bg-center flex justify-center">
         {/* Welcome Section */}
         <div className="text-center p-10">
-          <h1 className="mb-10 text-4xl font-bold">Welcome to my personal website!</h1>
-          <p className="mt-2 text-2xl shadow ">
+          <h1 className="mb-10 text-white text-4xl font-bold">Welcome to my personal website!</h1>
+          <p className="mt-2 text-white text-2xl shadow ">
             Hi! My name is Rachel Reyes from Denver, Colorado and currently a senior in college. Im looking for bigger opportunities to grow my software engineering skills after I graduate this year.
             This is little about the outdoors, good reads, great food, fitness, and
             software engineering.
