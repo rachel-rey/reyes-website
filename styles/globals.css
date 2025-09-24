@@ -24,6 +24,6 @@ body {
 
 @layer base{
   a {
-    @apply text-white hover:text-yellow-900;
+    @apply hover:text-yellow-900;
   }
 }

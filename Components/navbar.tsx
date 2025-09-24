@@ -7,7 +7,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
   console.log("its loading")
   return (
-    <nav className="text-white shadow-md p-8">
+    <nav className=" shadow-md p-8">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl font-bold">
@@ -27,7 +27,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden hover:text-yellow-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-900"
+          className="md:hidden hover:text-yellow-900 focus:outline-none focus:ring-2 focus:ring-yellow-900"
         >
           {isOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="fixed inset-0 bg-black/80 backdrop-blur-lg flex flex-col items-center justify-center space-y-6 text-2xl z-50">
           <button
           onClick={toggleMenu}
-          className="md:hidden hover:text-yellow-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-900"
+          className="md:hidden focus:outline-none focus:ring-2 focus:ring-yellow-900"
         >
           {isOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,10 +58,10 @@ export default function Navbar() {
             </svg>
           )}
         </button>
-          <Link href="/" className="hover:text-yellow-900" onClick={toggleMenu}>Home</Link>
-          <Link href="/aboutMe" className="hover:text-yellow-900" onClick={toggleMenu}>About Me</Link>
-          <Link href="/project" className="hover:text-yellow-900" onClick={toggleMenu}>Projects</Link>
-          <Link href="/contact" className="hover:text-yellow-900" onClick={toggleMenu}>Contact</Link>
+          <Link href="/" className="text-white hover:text-yellow-900" onClick={toggleMenu}>Home</Link>
+          <Link href="/aboutMe" className="text-white hover:text-yellow-900" onClick={toggleMenu}>About Me</Link>
+          <Link href="/project" className="text-white hover:text-yellow-900" onClick={toggleMenu}>Projects</Link>
+          <Link href="/contact" className="text-white hover:text-yellow-900" onClick={toggleMenu}>Contact</Link>
         </div>
       )}
     </nav>
