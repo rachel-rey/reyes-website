@@ -1,3 +1,7 @@
+## About me and this project!
+This is my portfolio website repo that is made wtih TypeScript using React through Next.js which is the web framework that allows me to deploy with Vercel as well as Node.js that allows me to run the Javascript outside of the browser. I also use the Tailwind framework for my CSS. It is currently a static website but I'm currently working on it to be dynamic. The website is rachelreyes.me 
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## About Me & this Project!
