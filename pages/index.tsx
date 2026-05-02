@@ -24,9 +24,9 @@ export default function Home() {
         <div className="text-center p-10">
           <h1 className="mb-10 text-white text-4xl font-bold">Welcome to my personal website!</h1>
           <p className="mt-2 text-white text-2xl shadow ">
-            Hi! My name is Rachel Reyes from Denver, Colorado and currently a senior in college. Im looking for bigger opportunities to grow my software engineering skills after I graduate this year.
-            This is little about the outdoors, good reads, great food, fitness, and
-            software engineering.
+            Hi! My name is Rachel Reyes from Denver, Colorado and recently graduated from the University of Denver with my Bachelors of Science in Computer Science.
+            I recently moved to Seattle, Washington and am currently looking for a new grad role within Software Engineering or Project Management.
+            This is little about the outdoors, good reads, great food, fitness,software engineering, and anything else I can think of! Please get to know me.
           </p>
         </div>
 
