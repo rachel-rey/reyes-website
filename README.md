@@ -4,18 +4,15 @@ This is my portfolio website repo that is made wtih TypeScript using React throu
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
+## About Me & this Project!
+This started out as an assignment starting February of 2025 and I decided to continue and fully implement the my personal portfolio here through Vercel. I use TypeScript with JSX syntax through using React as a library.
+For more about me and my coding journey as well as where this repo leads to go to: https://rachelreyes.me/
 ## Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
