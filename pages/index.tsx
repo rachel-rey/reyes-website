@@ -61,35 +61,6 @@ export default function Home() {
       </div>
       </div>
 
-      <div className="bg-forestbg bg-fixed bg-cover min-h-screen bg-no-repeat">
-        <div className="bg-transparent/60 bg-fixed min-h-screen bg-no-repeat flex items-center justify-center">
-          <div className="text-center p-10">
-            <h2 className="text-3xl text-white">Who I Am</h2>
-            <h1 className="mt-6 mb-5 text-white font-bold text-5xl">
-              <ReactTyped
-                strings={[
-                  "I'm a student",
-                  "I'm a weightlifter",
-                  "I'm an outdoors enthusiast",
-                  "I'm a foodie",
-                  "I'm a Software Engineer (aspiring)"
-                ]}
-                typeSpeed={100}
-                backSpeed={200}
-                loop
-              />
-            </h1>
-            <button
-              type="button"
-              className="mt-6 text-2xl bg-green-800 text-white px-8 py-4 rounded hover:text-yellow-900 focus:ring-1 focus:ring-white"
-            >
-              <Link href="/aboutMe">Learn More</Link>
-            </button>
-          </div>
-        </div>
-      </div>
-
-
 
       <footer className="py-10 ">
       {/* Social Media Links */}
