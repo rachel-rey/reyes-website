@@ -14,7 +14,7 @@
     "flowbite": "^2.5.2",
     "flowbite-react": "^0.10.2",
     "locomotive-scroll": "^4.1.4",
-    "next": "15.1.5",
+    "next": "15.1.11",
     "next-recaptcha-v3": "^1.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
