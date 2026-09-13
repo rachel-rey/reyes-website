@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import {useState} from "react";
-import {ReactTyped} from "react-typed";
 
 
 const meImages = [
