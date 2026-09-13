@@ -19,7 +19,7 @@ export default function AboutMe() {
           alt="Photo of Seattle Skyline during the day on a ferry"
           width={400}
           height={400}
-          className="h-auto rounded-md justify-center items-center"
+          className="h-auto rounded-sm justify-center items-center"
         />
       </div>
         <p className="text-lg">
